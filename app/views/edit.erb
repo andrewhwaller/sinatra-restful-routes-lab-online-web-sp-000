@@ -1,5 +1,7 @@
 <h1>Edit this recipe!</h1>
+<h4> Recipe name: <%= @recipe.name %> </h4>
 <h4> Ingredients: <%= @recipe.ingredients %> </h4>
+<h4> Cooktime: <%= @recipe.cook_time %> </h4>
 <form method="PATCH" action="/recipes/:id">
   <label for="name">Recipe name: </label>
   <input type="text" id="name" name="name">
