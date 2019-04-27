@@ -3,6 +3,7 @@
 <h4> Ingredients: <%= @recipe.ingredients %> </h4>
 <h4> Cooktime: <%= @recipe.cook_time %> </h4>
 <form method="PATCH" action="/recipes/:id">
+  <input id="hidden" type="hidden" name="_method" value="patch" />
   <label for="name">Recipe name: </label>
   <input type="text" id="name" name="name">
   <label for="ingredients">Ingredients: </label>
