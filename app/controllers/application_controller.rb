@@ -1,6 +1,7 @@
 require './config/environment'
 
 class ApplicationController < Sinatra::Base
+  
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
@@ -19,4 +20,6 @@ class ApplicationController < Sinatra::Base
     @recipe = Recipe.find_by_id(params[:id])
     erb :show
   end
+
+  
 end
