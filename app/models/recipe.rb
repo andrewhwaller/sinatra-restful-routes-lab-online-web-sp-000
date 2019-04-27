@@ -4,7 +4,7 @@ class Recipe
   def initialize
     @@all << self
   end
-  
+
   def self.all
     @@all
   end
